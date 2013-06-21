@@ -40,7 +40,7 @@ package
 	{
 		/**定义数组准备存储14个mc对象，其中每个mc对象在后面将加载图片*/
 		private var mcVec:Vector.<Object>;
-		
+		  
 		/**定义数组存储27种图片切换参数,其中各特效具体参数还可直接在其中更改*/
 		private var _effect:Vector.<Object>;
 		private var showID:uint;//特效类型代码
