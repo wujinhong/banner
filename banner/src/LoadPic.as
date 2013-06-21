@@ -33,7 +33,7 @@ package
 	/**
 	 * 加载图片
 	 * @author Gordon
-	 * 2013.06.09
+	 * 2013.06.09 
 	 */
 	[SWF(width="592", height="242", backgroundColor="#FFFFFF", frameRate="30")]
 	public class LoadPic extends Sprite
