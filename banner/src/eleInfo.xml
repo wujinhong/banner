@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<banner time="4000" srcLink="img/">
+	<img src="img0.jpg" linkUrl="http://zl.qq.com/" winTarget="_blank" />
+	<img src="img1.jpg" linkUrl="http://zl.qq.com/" winTarget="_blank" />
+	<img src="img2.jpg" linkUrl="http://www.baidu.com/" winTarget="_blank" />
+	<img src="img3.jpg" linkUrl="http://www.qq.com/" winTarget="_blank" />
+</banner>
