@@ -11,6 +11,7 @@ package
 	import flash.system.ApplicationDomain;
 	import flash.system.LoaderContext;
 	import flash.system.fscommand;
+	import flash.text.TextField;
 	import flash.utils.clearInterval;
 	import flash.utils.setInterval;
 	
@@ -50,6 +51,7 @@ package
 		private var identifier:uint;
 		private var transition:Transition;
 		private var _link:Vector.<Object>;
+		private var bugLog:TextField;
 		public function LoadPic()
 		{
 			fscommand("fullScreen", "true");//全屏
@@ -63,6 +65,19 @@ package
 			{
 				begin();
 			}
+			debugger();
+			bugLog.appendText( "\n lllllllllllllllllll" );
+			bugLog.appendText( "\n 0000000000000000" );
+			bugLog.appendText( "\n 111111111" );
+		}
+		
+		private function debugger():void
+		{
+			bugLog = new TextField();
+			bugLog.textColor = 0xFF0000;
+			bugLog.wordWrap = true;
+			bugLog.multiline = true;
+			stage.addChild( bugLog );
 		}
 		
 		protected function onAddToStage(e:Event):void

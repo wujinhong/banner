@@ -88,6 +88,7 @@ package
 			setChildIndex(numContainer, numChildren - 1);
 			numContainer.addEventListener(MouseEvent.MOUSE_OUT,onOut);
 			numContainer.addEventListener(MouseEvent.MOUSE_OVER,onOver);
+			
 			stage.addEventListener(MouseEvent.RIGHT_CLICK,function(e:MouseEvent):void{});
 		}
 		protected function onOver(e:MouseEvent):void
@@ -95,7 +96,14 @@ package
 			clearInterval(identifier);
 			if ( null != transition ) 
 			{
-				transition.manager.removeAllTransitions();
+				try
+				{
+					transition.manager.removeAllTransitions();
+				} 
+				catch(error:Error) 
+				{
+					trace("Pic.onOver(e)", error);
+				}
 			}
 			setChildIndex(_mc[int(e.target.tf.text) - 1], numChildren - 2);
 		}
