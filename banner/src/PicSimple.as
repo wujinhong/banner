@@ -94,7 +94,7 @@ package
 		protected function onOver(e:MouseEvent):void
 		{
 			clearInterval(identifier);
-			if (transition) 
+			if ( null != transition ) 
 			{
 				try
 				{
