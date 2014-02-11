@@ -96,7 +96,14 @@ package
 			clearInterval(identifier);
 			if (transition) 
 			{
-				transition.manager.removeAllTransitions();
+				try
+				{
+					transition.manager.removeAllTransitions();
+				}
+				catch( error:Error) 
+				{
+					trace( "PicSimple.onOver(e)", error.getStackTrace() );
+				}
 			}
 			setChildIndex(_mc[int(e.target.tf.text) - 1], numChildren - 2);
 		}
